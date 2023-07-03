@@ -1,0 +1,54 @@
+
+
+.slide {
+    padding: 20px 1px 20px 1px;
+}
+
+.card-image-carrossel{
+    height: 300px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 4px;
+}
+
+
+.text-title {
+    color: #00661D;
+    font-size: 25px;
+    font-family: Krona One;
+    text-align: start;
+}
+
+.text-body {
+    color: #878787;
+    font-size: 13px;
+    font-family: Krona One;
+}
+
+.card-carrossel {
+    border-radius: 12px;
+    background: #E8EEF6;
+    width: 95%;
+    height: 510px;
+    box-shadow: 0 0 20px 8px #d0d0d0;   
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px;
+ }
+
+
+ .card-carrossel .content {
+    padding-left: 5%;
+ }

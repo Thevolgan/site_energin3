@@ -1,0 +1,849 @@
+/*@font-face {
+    font-family: 'Krona one';
+    src: local(Krona_One), url(assets/font/Krona_One/KronaOne-Regular.ttf);
+    src: url('assets/font/Krona_One/KronaOne-Regular.ttf?#iefix') format('embedded-opentype'),
+    url('assets/font/Krona_One/KronaOne-Regular.woff') format('woff'),
+    url('assets/font/Krona_One/KronaOne-Regular.ttf') format('truetype'),
+    url('assets/font/Krona_One/KronaOne-Regular.svg#Krona_one') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#E8EEF6;
+    scroll-behavior: smooth;
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#E8EEF6;
+    scroll-behavior: smooth;
+}
+/*=================================================== MENUU =================================================*/
+/* ESTILIZAÇÃO DO MENU*/
+.menu-mobile{
+    display: none;
+}
+.menu{
+    z-index: 1000;
+    background: linear-gradient(90deg, #192362, #19612D);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.menu-geral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-family: 'Krona one';
+    padding: 0px 0px 0px 20px;
+    border: none;
+}
+.menu-items{
+    padding: 0px 25px 0px 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu-itens:hover{
+    color: #1558FF;
+    background-color: #1558FF;
+}
+.logo{
+    background-size: auto;
+    margin: none;
+    padding: none;
+}
+
+
+@media screen and (max-width: 850px){ /*RESPONSIVIDADE DO MENU*/
+    .menu-items{
+        padding: 0px 0px 0px 0px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .logo{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .menu-items{
+        padding: 0px 15px 0px 0px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 9px;
+    }
+    .logo{
+        width: 23px;
+        padding: 0px 0px 0px 0px;
+    }
+    .menu-geral{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: 'Krona one';
+    }
+}
+
+
+header{
+    background-image: url('/assets/header.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 127vh;
+}
+h1{
+    color: #FFF;
+    font-size: 100px;
+    font-family: Krona One;
+    padding-top: 4vw;
+    margin-top: 0;
+    margin-left: 7vw;
+    margin-bottom: 0vw;
+}
+h2{
+    color: #A9D3AB;
+    font-size: 35px;
+    font-family: Krona One;
+    margin-top: 0vw;
+    margin-left: 7vw;
+}
+.p-header{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Krona One;
+    margin-top: 0vw;
+    margin-left: 7vw;
+    width: 43vw;
+    line-height: 1.5vw;
+}
+.whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 90px;
+    background: linear-gradient(140deg, #108831 0%, rgba(16, 136, 49, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1000000000;
+}
+.float{
+    background-size: cover;
+}
+main{
+    background-image: url('/assets/main.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 89vh;
+}
+.general-cards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    grid-template-areas: 
+        "card-1 card-2 card-3"
+        "card-4 card-5 card-6"
+        "card-7 card-8 card-9";
+    column-gap: 7vw;
+}
+.card-1{
+    background-image: url('/assets/charger/galery/ed-harvey-LOcdN8j6yF0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+}
+.card-2{
+    background-image: url('/assets/charger/galery/eldo-rafael-iLrMw5v4afE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+}
+.card-3{
+    background-image: url('/assets/charger/galery/ernest-ojeh-aEytUoE1Tkc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+}
+.card-4{
+    background-image: url('/assets/charger/galery/markus-spiske-FoYn8wjHaVM-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+}
+.card-5{
+    background-image: url('/assets/charger/galery/markus-spiske-LC2lnn1gCXs-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+
+}
+.card-6{
+    background-image: url('/assets/charger/galery/netze-bw-Y1bx_aq-Vfw-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+}
+.card-7{
+    background-image: url('/assets/charger/galery/Rectangle100.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px
+}
+.card-8{
+    background-image: url('/assets/charger/galery/Rectangle99.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+    background-color: aqua;
+}
+.card-9{
+    background-image: url('/assets/charger/galery/juice-wpYb8d1Nha4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 12px;
+    background-color: aqua;
+}
+
+footer{
+    background-image: url('/assets/footer.svg');
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100%;
+    height: 129vh;
+    display: grid;
+    grid-template-areas: 
+        "contact icons"  
+        "adress adress";
+    align-items: end;
+    justify-content: center;
+    align-content: end;
+}
+.square{
+    display: grid;
+    grid-template-areas: 
+    "contact icons"  
+    "adress adress";
+    align-items: end;
+    justify-content: center;
+    row-gap: 37px;
+}
+.contact{
+    color: white;
+    font-family: 'Krona one';
+    font-size: 0.8rem;
+    display: grid;
+    grid-area: contact;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.icons{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    grid-area: icons;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+.icon{
+    width: 2.5vw; 
+}
+.adress{
+    grid-area: adress;
+    text-align: center;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: 'Krona one';
+    color: #ffffff;
+}
+.projex{
+    text-align: center;
+}
+.made-by{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+
+    line-height: 100px;
+    height: 10px;
+}
+
+/* =============================== responsividade =================================*/
+@media screen and (max-width: 1200px){
+    header{
+        background-image: url('/assets/charger/header2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 89vh;
+    }
+    h1{
+        color: #FFF;
+        font-size: 80px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        margin-bottom: 0vw;
+    }
+    h2{
+        color: #A9D3AB;
+        font-size: 27px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+    }
+    .p-header{
+        color: #FFF;
+        font-size: 10px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        width: 43vw;
+        line-height: 1.5vw;
+    }
+    footer{
+        background-image: url('/assets/footer.svg');
+        background-position-y: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 100%;
+        height: 103vh;
+        display: grid;
+        grid-template-areas: 
+            "contact icons"  
+            "adress adress";
+        align-items: end;
+        justify-content: center;
+        align-content: end;
+    }
+}
+@media screen and (max-width: 920px){
+    header{
+        background-image: url('/assets/charger/header3.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 68vh;
+    }
+    h1{
+        color: #FFF;
+        font-size: 80px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        margin-bottom: 0vw;
+    }
+    h2{
+        color: #A9D3AB;
+        font-size: 27px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+    }
+    .p-header{
+        color: #FFF;
+        font-size: 10px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        width: 80%;
+        line-height: 1.5vw;
+    }
+    footer{
+        background-image: url('/assets/footer.svg');
+        background-position-y: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 100%;
+        height: 78vh;
+        display: grid;
+        grid-template-areas: 
+            "contact icons"  
+            "adress adress";
+        align-items: end;
+        justify-content: center;
+        align-content: end;
+    }
+    .square{
+        display: grid;
+        grid-template-areas: 
+        "contact icons"  
+        "adress adress";
+        align-items: end;
+        justify-content: center;
+        row-gap: 0px;
+    }
+}
+@media screen and (max-width: 850px){
+    header{
+        background: linear-gradient(90deg, #192362, #19612D);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 60vh;
+    }
+    h1{
+        color: #FFF;
+        font-size: 80px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        margin-bottom: 0vw;
+    }
+    h2{
+        color: #A9D3AB;
+        font-size: 27px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+    }
+    .p-header{
+        color: #FFF;
+        font-size: 10px;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        width: 80%;
+        line-height: 2.1vw;
+    }
+}
+@media screen and (max-width: 550px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color:#E8EEF6;;
+    }
+    header{
+        background: linear-gradient(90deg, #192362, #19612D);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        color: #FFF;
+        font-size: 12vw;
+        font-family: Krona One;
+        text-align: center;
+        margin-top: 0vw;
+        margin-left: 0vw;
+        margin-bottom: 0vw;
+    }
+    h2{
+        color: #A9D3AB;
+        font-size: 4vw;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 0vw;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .p-header{
+        color: #FFF;
+        font-size: 2.5vw;
+        font-family: Krona One;
+        margin-top: 0vw;
+        margin-left: 0vw;
+        margin-bottom: 0vw;
+        width: 69vw;
+        line-height: 3.5vw;
+        text-align: left;
+ 
+    }
+    main{
+        background-image: url('/assets/charger/main.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 155vh;
+    }
+    /* ===================== main =========================*/
+    .general-cards{
+        padding-top: 5vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+        grid-template-areas: 
+            "card-1"
+            "card-2"
+            "card-3"
+            "card-4"
+            "card-5"
+            "card-6";   
+        row-gap: 7vw;
+    }
+
+    .card-1{
+        background-image: url('/assets/charger/galery/ed-harvey-LOcdN8j6yF0-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    }
+    .card-2{
+        background-image: url('/assets/charger/galery/eldo-rafael-iLrMw5v4afE-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    }
+    .card-3{
+        background-image: url('/assets/charger/galery/ernest-ojeh-aEytUoE1Tkc-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    }
+    .card-4{
+        background-image: url('/assets/charger/galery/markus-spiske-FoYn8wjHaVM-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    }
+    .card-5{
+        background-image: url('/assets/charger/galery/markus-spiske-LC2lnn1gCXs-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    
+    }
+    .card-6{
+        background-image: url('/assets/charger/galery/juice-wpYb8d1Nha4-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70vw;
+        height: 20vh;
+        border-radius: 12px;
+    }
+    .card-7{
+        background-image: url('/assets/charger/galery/Rectangle100.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 0vw;
+        height: 0vh;
+        border-radius: 12px
+    }
+    .card-8{
+        background-image: url('/assets/charger/galery/Rectangle99.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 0vw;
+        height: 0vh;
+        border-radius: 12px;
+        background-color: aqua;
+    }
+    .card-9{
+        background-image: url('/assets/charger/galery/juice-wpYb8d1Nha4-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 0vw;
+        height: 0vh;
+        border-radius: 12px;
+        background-color: aqua;
+    }
+
+    /* ======================= footer =========================*/
+    
+    footer{
+        background: linear-gradient(90deg, #192362, #19612D);
+        background-position-y: end;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 100%;
+        height: 37vh;
+        display: grid;
+        grid-template-areas: 
+        "contact"
+        "icons"
+        "adress"
+        "made-by"; 
+        align-items: end;
+        justify-content: center;
+        align-content: end;
+    }
+    .square{
+        display: grid;
+        grid-template-areas: 
+        "contact"
+        "icons"
+        "adress"
+        "made-by";   
+        align-items: end;
+        justify-content: center;
+        row-gap: 16px;
+        justify-items: center;
+    }
+    .contact{
+        color: white;
+        font-family: 'Krona one';
+        font-size: 1.5vw;
+        display: grid;
+        grid-area: contact;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .icons{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        grid-area: icons;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+    .icon{
+        width: 5vw; 
+    }
+    .adress{
+        grid-area: adress;
+        text-align: center;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+        font-family: 'Krona one';
+        color: #ffffff;
+    }
+    .projex{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 5vh;
+        padding-top: 5vw;
+        justify-content: space-evenly
+    }
+    .logo-projex{
+        width: 1px; 
+    }
+    .made-by{
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+        line-height: 2;
+        height:5vh;
+        grid-area: made-by;
+    }
+    }
+    @media screen and (max-width: 455px){
+
+        header{
+            background: linear-gradient(90deg, #192362, #19612D);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 58vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu{
+            z-index: 1000;
+            background: linear-gradient(90deg, #192362, #19612D);
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            display: none;
+        }
+        .menu-mobile{
+            z-index: 1000;
+            background: linear-gradient(90deg, #192362, #19612D);
+            display: flex;
+            width: 100%;
+            height: 10vh;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            list-style: none;
+        }
+        .menu-items{
+            padding: 0px 0px 0px 0px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Krona one';
+        }
+        footer{
+            background: linear-gradient(90deg, #192362, #19612D);
+            background-position-y: end;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            width: 100%;
+            height: 37vh;
+            display: grid;
+            grid-template-areas: 
+            "contact"
+            "icons"
+            "adress"
+            "made-by"; 
+            align-items: end;
+            justify-content: center;
+            align-content: end;
+        }
+        .square{
+            display: grid;
+            grid-template-areas: 
+            "contact"
+            "icons"
+            "adress"
+            "made-by";   
+            align-items: end;
+            justify-content: center;
+            row-gap: 16px;
+            justify-items: center;
+        }
+        .contact{
+            color: white;
+            font-family: 'Krona one';
+            font-size: 2.3vw;
+            display: grid;
+            grid-area: contact;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+        }
+        .icons{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            grid-area: icons;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+    
+        }
+        .icon{
+            width: 6vw; 
+        }
+        .adress{
+            grid-area: adress;
+            text-align: center;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.3vw;
+            font-family: 'Krona one';
+            color: #ffffff;
+        }
+        .projex{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 5vh;
+            padding-top: 5vw;
+            justify-content: space-evenly
+        }
+        .logo-projex{
+            width: 1px; 
+        }
+        .made-by{
+            position: relative;
+            text-decoration: none;
+            color: #ffffff;
+            line-height: 2;
+            height:5vh;
+            grid-area: made-by;
+        }
+
+    }

@@ -10,9 +10,10 @@ body{
 }
 
 html{
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    flex-direction: column;
 }

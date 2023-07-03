@@ -9,7 +9,7 @@ import { SubstationComponent } from './substation/substation.component';
 import { ChargerStationComponent } from './charger-station/charger-station.component';
 import { SaneamentComponent } from './saneament/saneament.component';
 import { RouterModule } from '@angular/router';
-import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel'
     WhoareComponent,
     SubstationComponent,
     ChargerStationComponent,
-
   ],
   imports: [
     BrowserModule,

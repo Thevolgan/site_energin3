@@ -1,0 +1,1476 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #E8EEF6;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+html{
+    margin: none;
+    padding: none;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*=================================================== Float button of whatsapp =================================================*/
+.whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 90px;
+    background: linear-gradient(140deg, #108831 0%, rgba(16, 136, 49, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1000000000;
+}
+.float{
+    background-size: cover;
+}
+/*=================================================== MENUU =================================================*/
+/* ESTILIZAÇÃO DO MENU*/
+#menus{
+    position: fixed;
+    z-index: 1000;
+    background-color: #21a5e7a3;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-radius: 0px 0px 20px 20px;
+}
+.menu-secundario{
+    position: fixed;
+    z-index: 1000;
+    background-color: #22acf1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.menu-geral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-family: 'Krona one';
+    padding: 20px 0px 0px 0px;
+    border: none;
+    background-color: #E8EEF6;
+}
+.menu-items{
+    padding: 0px 15px 0px 0px;
+    color: #151F5D;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu-itens:hover{
+    color: #1558FF;
+    background-color: #1558FF;
+}
+.logo{
+    background-size: auto;
+    margin: none;
+    padding: none;
+}
+
+
+
+/*=================================================== HEADER =================================================*/
+iframe{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: front 5s ;
+    background-size: cover;
+    border: none;
+}
+@keyframes front{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header-container{
+    width: 100%;
+    background-image: url('/assets/home/front1.svg');
+    background-size: cover;
+    grid-area: header;
+    height: 116vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.scroll-button {
+    border: 2px solid #ffffff;
+    width: 50px;
+    height: 80px;
+    border-radius: 120px;
+    background-color: #ffffff00;
+    position: relative;
+    z-index: 100;
+    top: -15vh;
+    left: 50vw;
+}
+video {
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.video{
+    height: 87vh;
+    background-size: cover;
+    width: 200%;
+}
+.quem-somos{
+    display: grid;
+    /*background-color: #1558FF;*/
+    background-image: url('/assets/home/quem_somos.svg');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vw;
+    position: relative;
+    /*top: -20vh;*/
+}
+/*======================================== BOTÃO ENTRE EM CONTATO ==========================================*/
+a{
+    text-decoration: none;
+}
+.fale-conosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.button {
+    background-color: #00661D;
+    border: 1px solid #00661D;
+    padding: 5px;
+    position: relative;
+    width: 15vw;
+    height: 5vh;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .button p {
+    top: 0.4em;
+    left: .2em;
+    margin: 0;
+    padding-left: 15px;
+    transition: .5s;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Krona one';
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .button img {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .button:hover p {
+    left: 0.6em;
+    color: #fff
+  }
+  
+  .button:hover img {
+    opacity: 1;
+  }
+  
+  .button:hover {
+    background-color: #00661D;
+  }
+  
+/*======================================== BOTÃO ENTRE EM CONTATO ==========================================*/
+.nossos-valores{
+    display: grid;
+   /*grid-template-rows: 0.3fr 0.3fr 1fr;*/
+    background-image: url('/assets/home/nossos_valores3.svg');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 110vw;    
+    align-items: center;
+    position: relative;
+}
+.general-cards-valores{
+    display: grid;
+    grid-template-areas:
+        'title' 
+        "general-cards1" 
+        "general-cards2" 
+        "general-cards3";
+    width: 100%;
+    height: 84vw;
+    align-items: center; 
+    justify-content: center;  
+    row-gap: 200px;
+}
+/*.title{
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    font-size: 6.1rem;
+    font-family: 'Krona one';
+    color: #00661D;
+    margin: 0px;
+    padding: 0px;
+    line-height: 100px;
+    height: 50px;    
+    margin-top: 70px;
+}*/
+ /* ------------------------------------- CARDS---------------------------------*/
+.general-cards1{
+    display: grid;
+    grid-area: general-cards1;
+    justify-content: center;
+    grid-template-areas: 
+        "card1 card2 card3 card4";
+    margin-top: -300px;
+    padding-bottom: -100px;
+    height: 1px;
+    gap: 4vw;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card1;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon1{
+    width: 33%;
+    color: #00661D;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card2;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon2{
+    width: 33%;
+    color: #00661D;
+}
+
+
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card3;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+    padding-top: 10px;
+}
+.icon3{
+    width: 33%;
+    color: #00661D;
+}
+.card4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card4;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon4{
+    width: 33%;
+    color: #00661D;
+}
+/*============================================ LINHA 2 DE CARDS com 3 cards================================*/ 
+.general-cards2{
+    display: grid;
+    grid-area: general-cards2;
+    justify-content: center;
+    grid-template-areas: 
+    "card5 card6 card7";
+    margin-top: -350px;
+    margin-bottom: 120px;
+    padding-bottom: -100px; 
+    height: 10px;
+    gap: 4vw
+}
+.card5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card5;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon5{
+    width: 33%;
+    color: #00661D;
+}
+.card6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card6;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon6{
+    width: 33%;
+    color: #00661D;
+}
+.card7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card7;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon7{
+    width: 33%;
+    color: #00661D;
+}
+/*============================================ LINHA 3 DE CARDS com 2 cards================================*/ 
+.general-cards3{ 
+    top: -800px;
+    display: grid;
+    grid-area: general-cards3;
+    justify-content: center;
+    grid-template-areas: 
+    "card8 card9";
+    margin-top: -650px;
+    padding-right: -100px;
+    height: 10px;
+    gap: 4vw;
+}
+.card8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card8;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon8{
+    width: 33%;
+    color: #00661D;
+}
+.card9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card9;
+    width: 12vw;
+    height: 25vh;
+    background: #E8EEF6;
+    box-shadow: -5px 5px 10px rgba(209, 214, 221, 0.2), 5px -5px 10px rgba(209, 214, 221, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(209, 214, 221, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(209, 214, 221, 0.5);
+    border-radius: 29px;
+}
+.icon9{
+    width: 33%;
+    color: #00661D;
+}
+.card-title{
+    font-size: 0.8rem;
+    font-family: 'Krona one';
+    color: #00661D;
+    padding-top: 30px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+}
+
+/*================================= Sustentabilidade ===============================*/
+.sustainability{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px solid #00661D;
+    position: relative;
+    background-color: #E8EEF6;
+    height: 40vh;
+}
+.text{
+    font-size: 17px;
+    font-family: 'Krona one';
+    color: #00661D;
+    text-align: center;
+    width: 900px;
+
+}
+
+/*================================ Carrossel ======================================*/
+
+.hehe{
+    display: flex;
+}
+.hehe .slick-slider{
+    width: 0%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hehe .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-left: auto;
+    /* column-gap: 100px; */
+    margin-right: auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    height: 600px;
+}
+.card-carrossel {
+   width: 20%;
+   height: 50%;
+   border-radius: 12px;
+   background: #E8EEF6;
+   
+   box-shadow: 0 0 20px 8px #d0d0d0;   
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+/*========================= Imagens do carrossel =======================================================*/
+.card-image-carrossel-1 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('src/assets/home/electric2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-2 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/substation.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-3 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/ete.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-4 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/energy_eficient.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-5 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/metalic_structure.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-6 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/dry_construction.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-7 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/solar_park.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-8 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/urban.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-image-carrossel-9 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 57px 57px;
+    position: relative;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/public_ilumination.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Text*/
+.text-title {
+    color: #00661D;
+    font-size: 40px;
+    font-family: Krona One;
+    padding-left: 10px; 
+}
+
+.text-body {
+    color: #878787;
+    font-size: 13px;
+    font-family: Krona One;
+    padding-left: 10px;
+}
+.slick-slider {
+    padding: 10px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.slick-initialized .slick-slider {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.gallery_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gallery_total--mobile {
+    display: none;
+}
+/*========================================== Galeria ======================================*/
+.services{
+    font-size: 25px;
+    font-family: 'Krona one';
+    color: #00661D;
+    padding-top: 70px;
+    font-weight: regular;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+        width: 100%;
+
+}
+.gallery {
+    padding-top: 100px;
+    padding-right: 50px;
+    width: 80%; /*=== Tamanho do container das imagens =======*/
+    margin: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    display: grid;
+    column-gap: 110px; /*=== espaçamento entre colunas das imagens =======*/
+    row-gap: 20px;      /*=== espaçamento entre linhas das imagens =======*/
+    grid-template-columns: 190px 190px 190px 190px 216px;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-c {
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-gap : 20px;
+  }
+  
+  .img-w {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+  }
+  
+  .img-w img {
+    display: flex;
+    grid-gap : 210px;
+    display: grid;
+    grid-gap : 20px;
+    grid-template-columns: 190px 190px 190px;
+    width: 280px;  /*=== Tamanho das imagens =======*/
+    height: 170px; /*=== Tamanho das imagens =======*/
+    border-radius: 12px;
+  }
+  
+  .img-c {
+      transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+  }
+  
+  .img-c:hover .img-w {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+  }
+  
+  .img-c.active {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .img-c.postactive {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .img-c.active.positioned {
+    left: 0 !important;
+    top: 0 !important;
+    transition-delay: 50ms;
+  }
+
+  /*================================== 3 cards d eserviços principais =======================================*/
+  .general-services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+  .card-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    overflow: hidden;
+  }
+   /*Image-1*/
+  .card-image-services-1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/areas/civil2.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+   /*Image*2*/
+  .card-image-services-2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/areas/eletric2.JPG');
+    background-position: center;
+    background-size: cover;
+  }
+   /*Image-3*/
+  .card-image-services-3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/assets/home/areas/ete2.png');
+    background-position: center;
+    background-size: cover;
+  }
+   .card-description {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #E8EEF6;
+    color: #212121;
+    height: 70%;
+    bottom: 0;
+    border-radius: 16px;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 2rem;
+  }
+  
+  /*Text*/
+  .text-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Krona one';
+  }
+
+  .text-body-card {
+    font-size: 0.8rem;
+    line-height: 130%;
+    font-family: 'Krona one';
+  }
+  
+  /* Hover states */
+  .card-services:hover .card-description {
+    transform: translateY(100%);
+  }
+  
+/*========================================= fOOTER =-=======================================*/
+.general-footer{
+    background-image: url('/assets/footer.svg');
+    background-size: cover;
+    z-index: 1;
+    height: 120vh;
+    display: grid;
+    grid-template-areas: 
+        "contact icons"  
+        "adress adress";
+    align-items: end;
+    justify-content: center;
+    align-content: end;
+}
+.square{
+    display: grid;
+    grid-template-areas: 
+    "contact icons"  
+    "adress adress";
+    align-items: end;
+    justify-content: center;
+    row-gap: 37px;
+}
+.contact{
+    color: white;
+    font-family: 'Krona one';
+    font-size: 0.8rem;
+    display: grid;
+    grid-area: contact;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.icons{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    grid-area: icons;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+.icon{
+    width: 2.5vw; 
+}
+.adress{
+    grid-area: adress;
+    text-align: center;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: 'Krona one';
+    color: #ffffff;
+}
+.projex{
+    text-align: center;
+}
+.made-by{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 1000px;
+    line-height: 100px;
+    height: 10px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+.icon-menu {
+    display: none;
+}
+
+
+.footer-mobile {
+    display: none;
+}
+
+.link_router {
+    z-index: 100;
+    color: white;
+}
+
+@media screen and (max-width: 1600px){
+.nossos-valores{
+    display: grid;
+    grid-template-areas: "title" "general-cards1" "general-cards2" "general-cards3";
+   /*grid-template-rows: 0.3fr 0.3fr 1fr;*/
+ 
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+    background-position: center;
+    width: 100%;    
+    height: 84vw; 
+    align-items: center;
+    padding-top: -1000px;
+    position: relative;
+    gap: 1px;
+}
+}
+
+.sidebar-mobile {
+    width: 0%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 100000;
+    transition: 0.2s;
+    box-shadow: 2px 10px 10px gray;
+}
+
+.items-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(10%, 10%);
+    transition: 1s;
+
+}
+
+.nosso-valores--mobile {
+    display: none;
+}
+
+.items-mobile li a{
+    font-size: 20px;
+    margin-top: 4px;
+    font-family: 'Krona one';
+
+}
+
+.items-mobile li {
+    margin-top: 25px;
+}
+
+.boxValues {
+    cursor: pointer;
+}
+
+.dialog_styled{
+    border: none;
+    outline: none;
+    background: none;
+    width: 22%;
+    z-index: 10;
+}
+
+.card_values {
+    background-color: #E2ECF6;
+    border: none;
+    padding: 60px 30px 60px 30px;
+    border-radius: 26.116px;
+    max-height: 400px;
+}
+
+
+.card_values .icons_struct {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_values .text_struct p{
+    color: #151F5D;
+    font-size: 12px;
+    font-family: Krona One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.about-us-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(-50%,-200%);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+.about-us-button button {
+    background: none;
+    border: 4px solid white;
+    color: white;
+    padding: 0px 40px 0px 40px;
+    border-radius: 10px;
+    width: 70%;
+
+}
+
+.position_button {
+    display: flex;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    flex-direction:row;
+}
+
+.button-align{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    ;
+}
+
+.button-align p {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Krona One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 14px;
+}
+
+.about-us-button .line {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){ /*RESPONSIVIDADE DO MENU*/
+    .menu-items{
+        padding: 0px 15px 0px 0px;
+        color: #151F5D;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .menu-geral {
+        display: none;
+    }
+    .logo{
+        width: 40px;
+    }
+
+    .menu-mobile {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    .icon-menu {
+        display: flex;
+        transform: scale(2.0);
+    }
+
+    .logo-mobile {
+        transform: translate(100%, 10%) scale(2.1);
+        margin-bottom: 50px;
+        
+    }
+
+    .fale-conosco{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .button {
+        width: 70%;
+        margin-bottom: 20px;
+      }
+      
+
+
+      .button img {
+        position: relative;
+        top: 0em;
+        right: -1.0em;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        transition: 0.5s;
+        height: 1em;
+        fill: #fff
+      }
+
+
+      .nossos-valores{
+        display: none;
+      }
+    
+      .struct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+   
+      .grid-valores-mobile {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 30px;
+         padding: 10px;
+         background-image: url('/assets/i-phone-13-vector-8.png');
+         background-size: cover;
+      }
+
+      .card-mobile {
+        box-shadow: 2.0853185653686523px 2.0853185653686523px 5.421828269958496px 0px rgba(209, 214, 221, 0.90), -2.0853185653686523px -2.0853185653686523px 4.170637130737305px 0px rgba(255, 255, 255, 0.90), 2.0853185653686523px -2.0853185653686523px 4.170637130737305px 0px rgba(209, 214, 221, 0.20), -2.0853185653686523px 2.0853185653686523px 4.170637130737305px 0px rgba(209, 214, 221, 0.20), -0.41706371307373047px -0.41706371307373047px 0.8341274261474609px 0px rgba(209, 214, 221, 0.50) inset, 0.41706371307373047px 0.41706371307373047px 0.8341274261474609px 0px rgba(255, 255, 255, 0.30) inset;
+        background: #E8EEF6;
+        border-radius: 12.095px;
+        width: 100%;
+        height: 160.537px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30%;
+      }
+      .iconMobile{
+        width: 57;
+        height: 57px;
+        overflow: none;
+        color: #00661D;
+        position: absolute;
+        margin-bottom: 4px;
+      }
+
+      .textService {
+         width: 80%;
+         margin-top: 20px;
+         margin-bottom: 20px;
+      }
+
+      .sustainability .text{
+        width: 80%;
+        text-align: start;
+    }
+
+    .nosso-valores--mobile {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+
+    .gallery {
+        padding-top: 0px;
+        padding-right: 0px;
+        margin: 0;
+        border-radius: 3px;
+        overflow: hidden;
+        display: grid;
+        column-gap: 0px; /*=== espaçamento entre colunas das imagens =======*/
+        row-gap: 0px;      /*=== espaçamento entre linhas das imagens =======*/
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 8%;
+
+      }
+
+      .img-w {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        transition: transform ease-in-out 300ms;
+
+      }
+      
+      .img-w img {
+        display: flex;
+        grid-gap : 0px;
+        display: grid;
+        grid-gap : 0px;
+        grid-template-columns: 1fr;
+        width: 100%;  /*=== Tamanho das imagens =======*/
+        height: 300px; /*=== Tamanho das imagens =======*/
+        border-radius: 12px;
+        margin-bottom: 40px;
+      }
+
+      .general-services {
+        display: none;
+      }
+
+      .general-footer{
+        display: none;
+    }
+
+    .footer-mobile {
+        background: linear-gradient(180deg, #151F5D 0%, #00661D 100%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 0px 30px;
+    }
+
+    .logo-footer {
+        margin-top: 0%;
+    }
+  
+
+    .contact{
+        margin-top: 0px;
+    }
+
+    .contact div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .contact img {
+        margin-right: 20px;
+    }
+
+    video {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 100%;
+    }
+
+    .video{
+        height: 100%;
+        width: 100%;
+    }
+   
+
+    .card-title{
+        font-size: 0.9rem;
+        font-family: 'Krona one';
+        color: #00661D;
+        padding-top: 60px;
+        font-weight: lighter;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .sustainability {
+        display: none;
+    }
+
+    
+    .hehe {
+        margin: 60px 0px 60px 0px;
+    }
+
+    .header-container{
+        width: 100%;
+        background-size: cover;
+        grid-area: header;
+        height: 37vh;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .hehe .slick-slide {
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+
+    .dialog_styled{
+        border: none;
+        outline: none;
+        background: none;
+        width: 80%;
+        z-index: 10;
+    }
+    
+    .gallery_total {
+        display: none;
+
+    
+    }
+    
+    .gallery_total--mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .about-us-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(0%, 0%);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+
+.about-us-button button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.position_button {
+    display: flex;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    flex-direction:row;
+}
+
+.button-align{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    ;
+}
+
+.button-align p {
+    color: #FFF;
+    font-size: 14px;
+    font-family: Krona One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 14px;
+    text-align: center;
+}
+
+.button-align svg {
+    display: none;
+}
+
+.about-us-button .line {
+    width: 0%;
+}
+
+
+.about-us-button--mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    bottom: 10px;
+
+}
+
+
+
+.card-carrossel {
+    width: 19rem;
+    height: 50%;
+
+ }
+ /*========================= Imagens do carrossel =======================================================*/
+ .card-image-carrossel-1 {
+     height: 50%;
+     width: 100%;
+ 
+ }
+ .card-image-carrossel-2 {
+    height: 50%;
+    width: 100%;
+
+ }
+ .card-image-carrossel-3 {
+    height: 50%;
+    width: 100%;
+
+     background-position: center;
+ }
+ .card-image-carrossel-4 {
+     height: 50%;
+     width: 100%;
+
+ }
+ .card-image-carrossel-5 {
+     height: 50%;
+     width: 100%;
+
+ }
+ .card-image-carrossel-6 {
+     height: 50%;
+     width: 100%;
+
+ }
+ .card-image-carrossel-7 {
+     height: 50%;
+     width: 100%;
+
+ }
+ .card-image-carrossel-8 {
+     height: 50%;
+     width: 100%;
+
+ }
+ .card-image-carrossel-9 {
+     height: 50%;
+     width: 100%;
+
+ }
+
+
+
+}
+
